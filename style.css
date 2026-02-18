@@ -643,6 +643,8 @@ a {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Input styling - Higher specificity to override general padding */
+.cta-box form .iti input,
 .iti input {
     height: 60px !important;
     width: 100% !important;
@@ -652,8 +654,7 @@ a {
     border-radius: 8px !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-    padding-left: 55px !important;
-    /* Adjust this to fit the flag perfectly */
+    padding-left: 85px !important;
 }
 
 .iti__selected-flag {
