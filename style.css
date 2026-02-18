@@ -1407,6 +1407,97 @@ a {
 }
 
 /* =========================================
+   Section: Metodologia
+   ========================================= */
+.section-method {
+    padding: var(--space-xl) 0;
+    background: #F8FAFC;
+    position: relative;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.method-features {
+    list-style: none;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.method-features li {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.method-features i {
+    font-size: 2rem;
+    color: var(--accent-primary);
+    background: #E0F2FE;
+    padding: 1rem;
+    border-radius: var(--radius-md);
+}
+
+.method-features strong {
+    display: block;
+    font-size: 1.25rem;
+    color: var(--bg-void);
+    margin-bottom: 0.5rem;
+}
+
+.method-features p {
+    font-size: 1rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+.method-image-frame {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.method-img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.method-image-frame:hover .method-img {
+    transform: scale(1.05);
+}
+
+.method-accent {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 40%;
+    height: 40%;
+    background: var(--accent-secondary);
+    z-index: -1;
+    filter: blur(40px);
+    opacity: 0.3;
+}
+
+@media (max-width: 900px) {
+    .method-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .method-visual {
+        order: -1;
+    }
+}
+
+/* =========================================
    Section: O Estrategista
    ========================================= */
 .section-expert {

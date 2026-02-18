@@ -161,8 +161,8 @@
 
                         <!-- Hero Tech Image Background -->
                         <div class="hero-tech-visual"
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.2; pointer-events: none;">
-                            <img src="/images/hero-tech.jpg" alt="Tecnologia MV Gestão"
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.15; pointer-events: none;">
+                            <img src="/.netlify/images?url=/images/hero-tech.jpg&w=1200&q=80" alt="Tecnologia MV Gestão"
                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-xl);">
                         </div>
 
@@ -277,9 +277,12 @@
                 </div>
 
                 <!-- Pilar 2 -->
-                <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
-                    <i class="ph ph-desktop bento-icon"></i>
-                    <div>
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="200"
+                    style="position: relative; overflow: hidden;">
+                    <img src="/.netlify/images?url=/images/premium-sites.jpg&w=600&q=70" alt="Site Premium"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.15;">
+                    <div style="position: relative; z-index: 1;">
+                        <i class="ph ph-desktop bento-icon"></i>
                         <h3 class="bento-title">Site de Alta Conversão</h3>
                         <p class="bento-desc">Ferramenta de vendas projetada psicologicamente para converter visitantes.
                         </p>
@@ -298,12 +301,15 @@
                 </div>
 
                 <!-- Pilar 4 -->
-                <div class="bento-card span-2" data-aos="fade-up" data-aos-delay="400" style="background: #F8FAFC;">
-                    <i class="ph ph-rocket-launch bento-icon" style="color: var(--accent-primary);"></i>
-                    <div>
-                        <h3 class="bento-title">Tráfego Pago Inteligente</h3>
-                        <p class="bento-desc">Chega de "botão impulsionar". Criamos campanhas cirúrgicas no Google e
-                            Meta Ads para atrair apenas quem está pronto para comprar.</p>
+                <div class="bento-card span-2" data-aos="fade-up" data-aos-delay="400"
+                    style="position: relative; overflow: hidden; background: #0F172A;">
+                    <img src="/.netlify/images?url=/images/traffic-data.jpg&w=1000&q=70" alt="Tráfego Pago"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.2;">
+                    <div style="position: relative; z-index: 1;">
+                        <i class="ph ph-rocket-launch bento-icon" style="color: #34D399;"></i>
+                        <h3 class="bento-title" style="color: #fff;">Tráfego Pago Inteligente</h3>
+                        <p class="bento-desc" style="color: #94A3B8;">Chega de "botão impulsionar". Criamos campanhas
+                            cirúrgicas no Google e Meta Ads para atrair apenas quem está pronto para comprar.</p>
                     </div>
                     <span class="bento-num">04</span>
                 </div>
@@ -432,6 +438,45 @@
                         <span>Não está disposto a investir na própria estrutura.</span>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Metodologia -->
+    <section class="section-method" id="metodo-detalhe">
+        <div class="container">
+            <div class="method-grid">
+                <div class="method-content" data-aos="fade-right">
+                    <span class="badge-tech">Engenharia de Dados</span>
+                    <h2>Metodologia de <span class="text-gradient">Lucro Previsível.</span></h2>
+                    <p>
+                        Tratamos o seu marketing como um sistema de engenharia. Cada clique, cada visita e cada contato
+                        é rastreado para garantir que seu investimento retorne em faturamento real.
+                    </p>
+                    <ul class="method-features">
+                        <li>
+                            <i class="ph ph-chart-line-up"></i>
+                            <div>
+                                <strong>Decisões Baseadas em Dados</strong>
+                                <p>Eliminamos o "eu acho" e focamos no que os números comprovam ser lucrativo.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="ph ph-gears"></i>
+                            <div>
+                                <strong>Automação de Aquisição</strong>
+                                <p>Sua empresa captando clientes qualificados enquanto você foca na operação.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="method-visual" data-aos="fade-left">
+                    <div class="method-image-frame">
+                        <img src="/.netlify/images?url=/images/method-dashboard.jpg&w=800&q=80"
+                            alt="Dashboard de Crescimento" class="method-img">
+                        <div class="method-accent"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
