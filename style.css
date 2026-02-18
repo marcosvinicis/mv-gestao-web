@@ -15,10 +15,10 @@
 
     --text-main: #F9FAFB;
     /* White-ish */
-    --text-body: #9CA3AF;
-    /* Grey 400 */
-    --text-muted: #6B7280;
-    /* Grey 500 */
+    --text-body: #CBD5E1;
+    /* Grey 300 - Better Contrast */
+    --text-muted: #94A3B8;
+    /* Grey 400 - Better Contrast */
 
     --accent-primary: #3B82F6;
     --accent-glow: rgba(59, 130, 246, 0.5);
@@ -350,6 +350,12 @@ a {
     max-width: 540px;
 }
 
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
 /* Visual Card - Glass */
 .glass-card {
     background: rgba(255, 255, 255, 0.02);
@@ -446,6 +452,19 @@ a {
 
     .hero h1 {
         font-size: 2.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 
@@ -1017,9 +1036,9 @@ a {
     border-bottom: 1px solid #E2E8F0;
     font-size: 0.875rem;
     text-transform: uppercase;
-    color: #94A3B8;
+    color: #475569;
     letter-spacing: 0.05em;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .case-row {
