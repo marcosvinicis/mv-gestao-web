@@ -597,42 +597,50 @@ a {
 }
 
 /* Fix Intl-Tel-Input styling */
-/* =========================================
-   Refinement E: Hero Depth (Orbs)
-   ========================================= */
-/* Glow behind the main card */
-.hero-visual::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
-    filter: blur(60px);
-    z-index: -1;
-    pointer-events: none;
-}
-
-/* Additional ambient orb */
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
-    filter: blur(80px);
-    z-index: -2;
-    pointer-events: none;
-}
-
 .iti {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
+}
+
+.iti__country-list {
+    color: #000;
+    z-index: 100 !important;
+    border-radius: var(--radius-md);
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Input styling */
+.iti input {
+    height: 60px !important;
+    width: 100% !important;
+    padding-left: 100px !important;
+    /* Increased padding */
+    background: #1E293B !important;
+    /* Dark CTA input bg */
+    border: 1px solid #475569 !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+}
+
+/* Selected Flag Container (Country Code) */
+.iti__selected-flag {
+    background: #0F172A !important;
+    /* Darker background for separation */
+    border-radius: 8px 0 0 8px !important;
+    border-right: 1px solid #475569 !important;
+    padding: 0 12px !important;
+    transition: background 0.3s;
+}
+
+.iti__selected-flag:hover {
+    background: #334155 !important;
+}
+
+.iti__selected-dial-code {
+    color: #94A3B8 !important;
+    font-weight: 600;
 }
 
 .iti__country-list {
