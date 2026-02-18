@@ -652,6 +652,8 @@ a {
     border-radius: 8px !important;
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
+    padding-left: 55px !important;
+    /* Adjust this to fit the flag perfectly */
 }
 
 .iti__selected-flag {
