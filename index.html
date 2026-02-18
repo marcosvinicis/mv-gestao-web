@@ -484,7 +484,7 @@
                     </div>
                     <div style="margin-bottom: 1rem;">
                         <input type="tel" name="phone" id="phone" placeholder="Número celular" required
-                            style="width: 100%; border-radius: 8px; border: none; height: 60px; padding-left: 140px; background: #1E293B; color: white;">
+                            style="width: 100%; border-radius: 8px; border: none; padding: 1rem;">
                     </div>
                     <div style="margin-bottom: 1rem;">
                         <input type="text" name="company" placeholder="Nome da Empresa" required
@@ -623,8 +623,7 @@
         if (phoneInput) {
             window.intlTelInput(phoneInput, {
                 utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
-                preferredCountries: ["br"],
-                separateDialCode: true,
+                preferredCountries: ["br"]
             });
         }
     </script>

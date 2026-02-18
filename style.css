@@ -643,35 +643,24 @@ a {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Input styling */
 .iti input {
     height: 60px !important;
     width: 100% !important;
-    padding-left: 140px !important;
-    /* Fixed: Increased to 140px to prevent overlap */
     background: #1E293B !important;
     border: 1px solid #475569 !important;
     color: #fff !important;
     border-radius: 8px !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 
-/* Selected Flag Container (Country Code) */
 .iti__selected-flag {
-    background: #0F172A !important;
-    /* Darker background for separation */
     border-radius: 8px 0 0 8px !important;
-    border-right: 1px solid #475569 !important;
-    padding: 0 12px !important;
-    transition: background 0.3s;
+    padding-left: 12px !important;
 }
 
 .iti__selected-flag:hover {
     background: #334155 !important;
-}
-
-.iti__selected-dial-code {
-    color: #94A3B8 !important;
-    font-weight: 600;
 }
 
 .cta-box button.btn-primary {
