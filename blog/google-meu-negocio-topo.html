@@ -1,62 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia definitivo para aparecer no topo do Google Maps em Maringá. | Blog MV Gestão Web</title>
-    <meta name="description" content="Dicas práticas para otimizar sua ficha no Google e ser a primeira escolha do seu bairro em Maringá.">
+    <title>Guia definitivo para aparecer no topo do Google Maps em Maringá | Blog MV Gestão Web</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        .post-content { max-width: 800px; margin: 0 auto; padding: 60px 20px; }
-        .post-content h1 { font-size: 3rem; margin-bottom: 2rem; color: var(--bg-void); line-height: 1.1; }
-        .post-content p { font-size: 1.125rem; line-height: 1.8; color: #475569; margin-bottom: 1.5rem; }
-        .post-content h2 { font-size: 2rem; margin-top: 3rem; margin-bottom: 1.5rem; color: var(--bg-void); }
-        .post-header-img { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-xl); margin-bottom: 3rem; }
-        .cta-box-blog { background: var(--accent-primary); padding: 3rem; border-radius: var(--radius-xl); color: #fff; margin-top: 4rem; text-align: center; }
-        .cta-box-blog h3 { font-size: 1.75rem; margin-bottom: 1rem; color: #fff; }
-        .cta-box-blog p { color: rgba(255,255,255,0.9); margin-bottom: 2rem; }
+        body {
+            background: var(--bg-void);
+            color: #fff;
+        }
+
+        .header {
+            background: rgba(10, 11, 20, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .post-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 140px 20px 80px;
+        }
+
+        .post-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+
+        .post-content p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #94A3B8;
+            margin-bottom: 2rem;
+        }
+
+        .post-content h2 {
+            font-size: 2.25rem;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .post-header-img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--radius-2xl);
+            margin-bottom: 4rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-box-blog {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 4rem;
+            border-radius: var(--radius-2xl);
+            color: #fff;
+            margin-top: 6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-box-blog h3 {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box-blog p {
+            color: #94A3B8;
+            margin-bottom: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-box-blog .btn {
+            position: relative;
+            z-index: 1;
+        }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="container header-inner">
             <div class="brand">MV GESTÃO WEB</div>
             <nav style="display: flex; gap: 2rem; align-items: center;">
-                <a href="/" style="color: var(--text-main); font-weight: 500; text-decoration: none;">Início</a>
-                <a href="/blog.html" style="color: var(--text-main); font-weight: 500; text-decoration: none;">Blog</a>
-                <a href="https://wa.me/5544997769301?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20diagnóstico%20digital%20da%20minha%20empresa" class="btn btn-outline-nav" target="_blank">Agendar Diagnóstico</a>
+                <a href="/" style="color: #fff; font-weight: 500; text-decoration: none;">Início</a>
+                <a href="/blog.html" style="color: #fff; font-weight: 500; text-decoration: none;">Blog</a>
+                <a href="https://wa.me/5544997769301?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20diagnóstico%20digital%20da%20minha%20empresa"
+                    class="btn btn-outline-nav" target="_blank"
+                    style="border-color: rgba(255,255,255,0.2); color: #fff;">Agendar Diagnóstico</a>
             </nav>
         </div>
     </header>
 
     <article class="post-content">
-        <span class="badge-tech">SEO Local</span>
-        <h1>Guia definitivo para aparecer no topo do Google Maps em Maringá.</h1>
-        <img src="https://images.unsplash.com/photo-1579389083046-e3d90b4d4a66?q=80&w=1200" alt="Guia definitivo para aparecer no topo do Google Maps em Maringá." class="post-header-img">
-        
-        <p>Se você tem um consultório, loja ou escritório em Maringá, o seu maior aliado não é o Instagram, mas o <strong>Google Meu Negócio</strong>. Quando alguém pesquisa por um serviço "perto de mim", o Google mostra um mapa. Se você não está nele, você perde o cliente no momento crítico da decisão.</p>
-        <h2>Otimizando sua Ficha</h2>
-        <p>A primeira coisa é garantir que todas as informações estejam corretas. Nome, endereço (Maringá - PR) e telefone formatado corretamente. Mas isso é só o básico.</p>
-        <h2>As Avaliações são a sua Moeda</h2>
-        <p>O Google prioriza perfis que interagem e recebem avaliações constantes. Incentive seus clientes de Maringá a deixarem um feedback positivo com palavras-chave como "excelente atendimento em Maringá".</p>
+        <div style="margin-bottom: 1.5rem;"><span class="badge-tech"
+                style="background: rgba(52, 211, 153, 0.1); color: #34D399; border: 1px solid rgba(52, 211, 153, 0.2);">SEO
+                Local</span></div>
+        <h1 data-aos="fade-up">Guia definitivo para aparecer no topo do Google Maps em Maringá.</h1>
+        <img src="https://images.unsplash.com/photo-1579389083046-e3d90b4d4a66?auto=format&fit=crop&q=80&w=1200"
+            alt="Google Maps" class="post-header-img" data-aos="zoom-in">
 
-        <div class="cta-box-blog">
-            <h3>Deseja escalar seu negócio?</h3>
-            <p>Agende seu Diagnóstico Estratégico Gratuito e descubra o plano exato para sua escala.</p>
-            <a href="https://wa.me/5544997769301?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20diagnóstico%20digital%20da%20minha%20empresa" class="btn btn-primary" style="background: #fff; color: var(--accent-primary);" target="_blank">Solicitar Diagnóstico</a>
+        <div data-aos="fade-up">
+            <p>Se você tem um consultório, loja ou escritório em Maringá, o seu maior aliado não é o Instagram, mas o
+                <strong>Google Meu Negócio</strong>. Quando alguém pesquisa por um serviço "perto de mim", o Google
+                mostra um mapa. Se você não está nele, você perde o cliente no momento crítico da decisão.</p>
+            <h2>Otimizando sua Ficha</h2>
+            <p>A primeira coisa é garantir que todas as informações estejam corretas. Nome, endereço (Maringá - PR) e
+                telefone formatado corretamente. Mas isso é só o básico.</p>
+            <h2>As Avaliações são a sua Moeda</h2>
+            <p>O Google prioriza perfis que interagem e recebem avaliações constantes. Incentive seus clientes de
+                Maringá a deixarem um feedback positivo com palavras-chave como "excelente atendimento em Maringá".</p>
+        </div>
+
+        <div class="cta-box-blog" data-aos="fade-up">
+            <h3>Deseja escalar seu negócio com inteligência?</h3>
+            <p>Agende seu Diagnóstico Estratégico Gratuito e descubra o plano exato para sua escala digital.</p>
+            <a href="https://wa.me/5544997769301?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20diagnóstico%20digital%20da%20minha%20empresa"
+                class="btn btn-primary" target="_blank">Solicitar Diagnóstico no WhatsApp</a>
         </div>
     </article>
 
-    <footer class="footer">
+    <footer class="footer" style="padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.05);">
         <div class="container" style="text-align: center;">
-            <div class="brand" style="color: var(--bg-void); margin-bottom: 2rem;">MV GESTÃO WEB</div>
-            <p>© 2026 MV Gestão Web - Todos os direitos reservados.</p>
+            <div class="brand" style="color: #fff; margin-bottom: 2rem; opacity: 0.5;">MV GESTÃO WEB</div>
+            <p style="color: #64748B;">© 2026 MV Gestão Web - Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 </body>
+
 </html>
