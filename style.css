@@ -1289,3 +1289,39 @@ a {
         gap: 2rem;
     }
 }
+
+/* =========================================
+   Section 10: Localização (Map)
+   ========================================= */
+.section-map {
+    background: #F1F5F9;
+    padding: 0;
+    line-height: 0;
+    border-top: 1px solid #CBD5E1;
+    position: relative;
+    z-index: 1;
+}
+
+.map-container {
+    width: 100%;
+    filter: grayscale(1) contrast(1.2) opacity(0.8);
+    /* Tech Look */
+    transition: all 0.5s ease;
+}
+
+.map-container:hover {
+    filter: grayscale(0) contrast(1) opacity(1);
+    /* Reveal color on hover */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
