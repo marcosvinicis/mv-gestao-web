@@ -1405,3 +1405,111 @@ a {
         height: 300px;
     }
 }
+
+/* =========================================
+   Section: O Estrategista
+   ========================================= */
+.section-expert {
+    padding: var(--space-xl) 0;
+    background: #0F172A;
+    /* Dark theme contrast */
+    color: #F8FAFC;
+    position: relative;
+    overflow: hidden;
+}
+
+.expert-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.expert-frame {
+    position: relative;
+    border-radius: var(--radius-xl);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.expert-img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    display: block;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.1) contrast(1.05);
+}
+
+.expert-glow {
+    position: absolute;
+    top: -20%;
+    right: -20%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(52, 211, 153, 0.15) 0%, transparent 70%);
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.expert-content h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.expert-content p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #94A3B8;
+    margin-bottom: 1.5rem;
+}
+
+.expert-content strong {
+    color: #34D399;
+    /* Neon highlight */
+}
+
+.expert-signature {
+    margin-top: 3rem;
+    padding-left: 2rem;
+    border-left: 2px solid #34D399;
+}
+
+.expert-signature span {
+    display: block;
+    font-size: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.expert-signature small {
+    color: #64748B;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+    .expert-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .expert-signature {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #34D399;
+        padding-top: 1.5rem;
+        display: inline-block;
+    }
+
+    .expert-content h2 {
+        font-size: 2.25rem;
+    }
+}
